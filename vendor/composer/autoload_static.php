@@ -92,6 +92,7 @@ class ComposerStaticInit24efe142ac8bad4867429748775a4195
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
             'Psr\\Cache\\' => 10,
+            'Prometheus\\' => 11,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
         ),
@@ -324,6 +325,10 @@ class ComposerStaticInit24efe142ac8bad4867429748775a4195
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Prometheus\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/promphp/prometheus_client_php/src/Prometheus',
         ),
         'PhpParser\\' => 
         array (

@@ -3,7 +3,7 @@
         'name' => 'akodj/backend',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '4d2fbe8988e2b69fb2a2c80ebbeb1494903872e7',
+        'reference' => '2666542d3c567ffd5936dc90bdf22f76e1f2d84c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'akodj/backend' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '4d2fbe8988e2b69fb2a2c80ebbeb1494903872e7',
+            'reference' => '2666542d3c567ffd5936dc90bdf22f76e1f2d84c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -117,6 +117,12 @@
             'install_path' => __DIR__ . '/../egulias/email-validator',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'endclothing/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'graham-campbell/result-type' => array(
             'pretty_version' => 'v1.1.3',
@@ -313,6 +319,12 @@
                 0 => 'v8.83.29',
             ),
         ),
+        'jimdo/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
+        ),
         'laravel/framework' => array(
             'pretty_version' => 'v8.83.29',
             'version' => '8.83.29.0',
@@ -366,6 +378,12 @@
             'install_path' => __DIR__ . '/../league/mime-type-detection',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'lkaemmerling/prometheus_client_php' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '*',
+            ),
         ),
         'monolog/monolog' => array(
             'pretty_version' => '2.10.0',
@@ -514,6 +532,15 @@
             'reference' => 'd42785840519401ed2113292263795eb4c0f95da',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'promphp/prometheus_client_php' => array(
+            'pretty_version' => 'v2.13.1',
+            'version' => '2.13.1.0',
+            'reference' => '3f8e4ff20e4090e494572feaf68b36c197e0e3ef',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../promphp/prometheus_client_php',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

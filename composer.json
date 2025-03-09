@@ -1,0 +1,24 @@
+{
+    "name": "akodj/backend",
+    "type": "project",
+    "require": {
+        "laravel/framework": "^8.0",
+        "symfony/framework-bundle": "^5.2",
+        "doctrine/dbal": "^2.0",
+        "phpunit/phpunit": "^11.5",
+        "promphp/prometheus_client_php": "^2.13"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Akodj\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arthurkdjr",
+            "email": "akodjiyana@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
