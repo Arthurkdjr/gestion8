@@ -19,13 +19,12 @@ jobs:
         run: composer install
     
 
-         # Étape 4 : Builder l'application Angular
       - name: Build backend project
         run: |
-          cd backend
-          composer run build
+        
+          composer run build 
 
-        # Étape 5 : Exécuter les tests PHP
+     # Étape 5 : Exécuter les tests PHP
       - name: Run PHP tests
         run: vendor/bin/phpunit 
 
