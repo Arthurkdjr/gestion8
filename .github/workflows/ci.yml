@@ -14,20 +14,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-    # Étape 2 : Installer les dépendances PHP
+      # Étape 2 : Installer les dépendances PHP
       - name: Install PHP dependencies
         run: composer install
-    
 
-     # Étape 5 : Exécuter les tests PHP
-      - name: Run PHP tests
-        run: vendor/bin/phpunit 
+      # Étape 3 : Donner les droits d'exécution à PHPUnit (facultatif si on utilise php ...)
+      - name: Set execute permission for phpunit
+        run: chmod +x vendor/bin/phpunit
 
+      # Étape 4 : Exécuter les tests
+      - name: Run PHPUnit tests
+        run: php vendor/bin/phpunit
 
+      # Étape 5 : Packager l'application
       - name: Package application
         run: |
-           zip -r application.zip . -x "node_modules/*" "vendor/*
+          zip -r application.zip . -x "node_modules/*" "vendor/*"
 
+      # Étape 6 : Construire l'image Docker
       - name: Build Docker image
-        run: 
-         docker build -t my-app:latest .
+        run: docker build -t my-app:latest .
