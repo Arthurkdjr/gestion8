@@ -19,11 +19,6 @@ jobs:
         run: composer install
     
 
-      - name: Build backend project
-        run: |
-        
-          composer run build 
-
      # Étape 5 : Exécuter les tests PHP
       - name: Run PHP tests
         run: vendor/bin/phpunit 
